@@ -134,7 +134,7 @@ def dt_string():
 
 class Queue(ModelView):
     datamodel = SQLAInterface(Queue)
-
+    list_widget = MyListWidget
     list_columns = ['ip', 'identity', 'time']
 
     show_fieldsets = [
